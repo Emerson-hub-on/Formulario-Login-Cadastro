@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="login-main">
+        <div class="leftside-login">
+            <h1>Faça seu login <br>E entre para o nosso time</h1>
+        </div>
+        <div class="rightside-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <form method="POST" action="login.html" class="loginvalidator">
+                    <div class="text-field">
+                        <label for="usuario"> Seu usuário</label>
+                        <input type="text" name="usuario" data-rules="required|min=2" placeholder="User...">
+                    </div>
+                    <div class="text-field">
+                        <label for="senha">Sua senha</label>
+                        <input type="password" name="senha" data-rules="required|min=4" placeholder="Password...">
+                    </div>
+                    <div>
+                        <label>
+                            <input class="button-login" type="submit" name="login">
+                        </label>
+                    </div>
+                    <div class="question-cadastro">
+                        Quer fazer um cadastro? <br><a href="cadastro.html">Faça o cadastro</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="scriptLogin.js"></script>
+</body>
+
+</html>
